@@ -12,10 +12,10 @@ const weeks = [
     ],
     examples: [
       "AI GTM operators",
-      "early stage product builders",
-      "technical founders who sell",
+      "Early stage product builders",
+      "Technical founders who sell",
       "RevOps and growth engineers",
-      "design partners with strong internal playbooks",
+      "Design partners with strong internal playbooks",
     ],
     output:
       'A simple ICP for the first 100 high value professionals, plus a "who makes SuperMe smarter" rubric for sourcing and onboarding.',
@@ -247,6 +247,11 @@ export default function Home() {
               experience into something users can search, understand, trust, and
               come back to.
             </p>
+            <p className="mb-6 text-base leading-7 text-muted">
+              My bet is that SuperMe wins by finding the people whose best work
+              is trapped in docs, calls, talks, Slack threads, and half-written
+              playbooks, then making that judgment usable by everyone else.
+            </p>
             <div className="grid gap-3 sm:grid-cols-3">
               {[
                 "The network needs high signal people, not just more people",
@@ -303,9 +308,10 @@ export default function Home() {
                             {week.examples.map((example) => (
                               <li
                                 key={example}
-                                className="rounded-md border border-line bg-paper px-3 py-2 text-xs font-medium leading-5 text-muted"
+                                className="flex gap-2 text-sm leading-6 text-muted"
                               >
-                                {example}
+                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                                <span>{example}</span>
                               </li>
                             ))}
                           </ul>
@@ -399,11 +405,11 @@ export default function Home() {
 
           <section className="rounded-lg border border-line bg-white p-5 shadow-memo sm:p-6">
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-              Before we even talk
+              Before we talk
             </p>
             <p className="text-lg leading-8 text-ink">
-              I'd be happy to send over a first list of 25 operators I think
-              would make SuperMe stronger and why.
+              Before we talk, I'd be happy to send over a first list of 25
+              operators I think would make SuperMe stronger and why.
             </p>
           </section>
 
