@@ -18,7 +18,7 @@ const weeks = [
       "design partners with strong internal playbooks",
     ],
     output:
-      "A simple ICP for the first 100 high value professionals, plus a profile quality rubric that can guide sourcing and onboarding.",
+      'A simple ICP for the first 100 high value professionals, plus a "who makes SuperMe smarter" rubric for sourcing and onboarding.',
   },
   {
     week: "Week 2",
@@ -230,6 +230,17 @@ export default function Home() {
               SuperMe gets stronger when the right professionals join, but only
               if their expertise becomes usable inside the product.
             </p>
+            <p className="mb-6 rounded-lg border border-line bg-white p-5 text-base font-medium leading-7 text-ink shadow-memo">
+              My read is that SuperMe is not competing with LinkedIn profiles.
+              It is competing with the private doc, Slack thread, podcast clip,
+              customer call, and founder note where someone's real expertise
+              usually lives.
+            </p>
+            <p className="mb-6 text-lg leading-8 text-ink">
+              The wedge is not more profiles. The wedge is turning real
+              professional judgment into something searchable, conversational,
+              and useful.
+            </p>
             <p className="mb-6 text-base leading-7 text-muted">
               The hard part is not just recruiting impressive people. It is
               converting their judgment, artifacts, and lived operating
@@ -288,16 +299,16 @@ export default function Home() {
                           <p className="mb-3 text-sm font-semibold text-ink">
                             Example segments
                           </p>
-                          <div className="mb-5 flex flex-wrap gap-2">
+                          <ul className="mb-5 space-y-2">
                             {week.examples.map((example) => (
-                              <span
+                              <li
                                 key={example}
-                                className="rounded-full border border-line bg-paper px-3 py-1 text-xs font-medium text-muted"
+                                className="rounded-md border border-line bg-paper px-3 py-2 text-xs font-medium leading-5 text-muted"
                               >
                                 {example}
-                              </span>
+                              </li>
                             ))}
-                          </div>
+                          </ul>
                         </>
                       ) : null}
                       <p className="text-sm leading-6 text-muted">
@@ -384,6 +395,16 @@ export default function Home() {
                 connected. That is what makes it interesting.
               </p>
             </div>
+          </section>
+
+          <section className="rounded-lg border border-line bg-white p-5 shadow-memo sm:p-6">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+              Before we even talk
+            </p>
+            <p className="text-lg leading-8 text-ink">
+              I'd be happy to send over a first list of 25 operators I think
+              would make SuperMe stronger and why.
+            </p>
           </section>
 
           <section className="rounded-lg border border-line bg-ink p-6 text-white shadow-memo sm:p-8">
